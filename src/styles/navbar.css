@@ -1,0 +1,11 @@
+@layer components {
+  .js-mobile-menu {
+    @apply transition-all duration-300 ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .js-mobile-menu:not(.hidden) {
+    max-height: 300px;
+  }
+} 

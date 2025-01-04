@@ -1,0 +1,34 @@
+@layer components {
+  .modal {
+    @apply fixed inset-0 z-50;
+    @apply invisible opacity-0;
+    @apply transition-all duration-300;
+    @apply backdrop-blur-sm;
+    @apply bg-primary/90;
+  }
+
+  .modal.is-visible {
+    @apply visible opacity-100;
+  }
+
+  .modal--animate-scale .modal__content {
+    @apply transition-all duration-300 ease-out;
+    @apply bg-white;
+    @apply border border-accent-coral/20;
+    transform: scale(0.95) translateY(10px);
+    opacity: 0;
+  }
+
+  .modal.is-visible .modal__content {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+
+  .modal__close-btn--outer {
+    @apply absolute top-0 right-0 z-10;
+    @apply p-4 text-accent-coral opacity-70;
+    @apply hover:opacity-100 focus:opacity-100;
+    @apply transition-opacity duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent-coral;
+  }
+} 
