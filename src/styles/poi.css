@@ -1,10 +1,12 @@
 @layer components {
   .poi {
     @apply pointer-events-none w-full absolute inset-0;
+    @apply h-full;
   }
 
   .poi__item {
     @apply absolute pointer-events-auto;
+    @apply z-10;
   }
 
   .poi__btn {
