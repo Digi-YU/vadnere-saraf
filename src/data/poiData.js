@@ -5,7 +5,7 @@ export const poiItems = [
     modal: {
       title: 'Nose Ring',
       description: 'A delicate nose ring crafted with precision, perfect for adding a touch of elegance to your look.',
-      image: '/src/assets/nose_ring.webp',
+      image: '/points-of-interest/assets/nose_ring.webp',
       price: 15.00
     }
   },
@@ -14,8 +14,8 @@ export const poiItems = [
     position: { top: '55%', left: '26%' },
     modal: {
       title: 'Hand Jewellery',
-      description: 'Elegant and stylish hand jewellery perfect for any occasion. Made with high-quality materials and intricate designs.',
-      image: '/src/assets/hand_jewellery.webp',
+      description: 'Elegant and stylish hand jewellery perfect for any occasion.',
+      image: '/points-of-interest/assets/hand_jewellery.webp',
       price: 259.00
     }
   },

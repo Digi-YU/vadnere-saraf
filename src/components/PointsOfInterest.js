@@ -4,7 +4,7 @@ export function createPOIComponent(container) {
   const template = `
     <figure class="relative z-[1] w-full">
       <div class="w-full max-w-5xl mx-auto">
-        <img class="block w-full h-auto aspect-[16/9] object-cover" src="./assets/pexels-vikashkr50-27155540.jpg" alt="Product Image">
+        <img class="block w-full h-auto aspect-[16/9] object-cover" src="/points-of-interest/assets/pexels-vikashkr50-27155540.jpg" alt="Product Image">
       </div>
       <ul class="poi js-poi absolute inset-0">
         ${poiItems.map(item => createPOIButton(item)).join('')}
